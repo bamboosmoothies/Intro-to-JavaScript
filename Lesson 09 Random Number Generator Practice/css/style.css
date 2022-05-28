@@ -1,0 +1,16 @@
+.section {
+	display: block;
+	text-align: center;
+	font-size: 10em;
+}
+
+#rollButton {
+	display: block;
+	height: 10rem;
+	width: 10rem;
+	text-align: center;
+	font-size: 5rem;
+	position: absolute;
+	margin: 0 45% 100%;
+	width: 10%;
+}
