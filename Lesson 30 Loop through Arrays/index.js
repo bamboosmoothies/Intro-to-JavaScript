@@ -1,21 +1,18 @@
-//  array = think of it as a variable that can store mutiple value
+let prices = [5, 10, 15, 20];
 
-let fruits = ["apple", "orange", "banana"];
-console.log(fruits[2]);
+//Default
+// for (let i = 0; i < prices.length; i += 1) {
+//     console.log(prices[i]);
+// }
 
-fruits[0] = "coconut";
+//Reverse
 
-console.log(fruits);
+// for (let i = prices.length - 1; i >= 0; i -= 1) {
+//     console.log(prices[i]);
+// }
 
-fruits.push("lemons");  // add an element
-fruits.pop();           // removes last element
-fruits.unshift("mango") // add element to beginning
-fruits.shift();         // remove element to beginning
+//For up statement (Works same way as traditional default loop method)
 
-console.log(fruits);
-
-let length = fruits.length;
-let index = fruits.indexOf("orange");
-
-console.log(length)
-console.log(index);
+for (let i of prices) {
+	console.log(i);
+}
