@@ -1,24 +1,10 @@
-/**
- *  rest parameters = represents an indefinite number
- *  of parameters
- *  (pack arguments into an array)
- *  ...
- */
+//	array.reduce() = reduces an array to a single value
 
-let a = 1;
-let b = 2;
-let c = 3;
-let d = 4;
-let e = 5;
+let prices = [5, 10, 15, 20, 25, 30];
+let total = prices.reduce(checkOut);
 
-console.log(sum(a, b, c, d, e));
-console.log(sum(a, b));
+console.log(`The total is $${total}`);
 
-//accepts indefinite parameter arg
-function sum(...numbers) {
-	let total = 0;
-	for (let number of numbers) {
-		total += number;
-	}
-	return total;
+function checkOut(total, element) {
+	return total + element;
 }
