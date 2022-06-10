@@ -1,0 +1,7 @@
+body {
+	grid-gap: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+}
